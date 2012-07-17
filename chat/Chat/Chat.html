@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Chat</title>
+</head>
+<body>
+    <h1>SignalR - Chat</h1>
+    <div style="width: 100%">
+        <div style="display: inline">
+            <button id="subscribeToEu" style="width: 33%">Subscribe to Eu</button>
+            <button id="subscribeToEuMesmo" style="width: 33%">Subscribe to Eu Mesmo</button>
+            <button id="subscribeToIrene" style="width: 33%">Subscribe to Irene</button>
+        </div>
+        <div style="float: left; display: block; width: 33%">
+            <h2>Eu</h2>
+            <input type="text" id="eu" value=" " />
+            <button id="sendEu">Send</button>
+            <ul id="historyEu">
+            </ul>
+        </div>
+        <div style="float: left; display: block; width: 33%">
+            <h2>Eu mesmo</h2>
+            <input type="text" id="euMesmo" value=" " />
+            <button id="sendEuMesmo">Send</button>
+            <ul id="historyEuMesmo">
+            </ul>
+        </div>
+        <div style="float: left; display: block; width: 33%">
+            <h2>Irene</h2>
+            <input type="text" id="irene" value=" " />
+            <button id="sendIrene">Send</button>
+            <ul id="historyIrene">
+            </ul>
+        </div>
+    </div>
+    <script src="../Scripts/jquery-1.7.2.js"></script>
+    <script src="../Scripts/jquery.signalR-0.5.2.js"></script>
+    <script src="../Scripts/jquery.color.js"></script>
+    <script src="../signalr/hubs"></script>
+    <script src="Chat.js"></script>
+</body>
+</html>
