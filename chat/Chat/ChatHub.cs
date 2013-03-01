@@ -15,4 +15,4 @@ namespace SignalR.ChatApp
             Clients[topic].receive(message);
         }
     }
-}
+}//hehe
